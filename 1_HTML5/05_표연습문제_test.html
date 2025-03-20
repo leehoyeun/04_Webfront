@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    thead {
+      background-color: aqua;
+    }
+
+    tbody {
+      background-color: orange;
+    }
+
+    tfoot {
+      background-color: yellow;
+    }
+
+    tbody th,
+    tfoot th {
+      background-color: red;
+    }
+
+    .tahead * {
+      background-color: white;
+    }
+  </style>
+</head>
+<body>
+  <table class="po3" border="1px">
+    <thead>
+      <tr>
+        <th colspan="5">하수정 컬렉션</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th rowspan="5">제품리스트</th>
+        <th>코드</th>
+        <th>분류</th>
+        <th>가격</th>
+        <th>구매가능개수</th>
+      </tr>
+      <tr>
+        <td>01-468</td>
+        <td>봄</td>
+        <td>200,000원</td>
+        <td>1068</td>
+      </tr>
+      <tr>
+        <td>01-223</td>
+        <td>여름</td>
+        <td>200,000원</td>
+        <td>1976</td>
+      </tr>
+      <tr>
+        <td>01-626</td>
+        <td>가을</td>
+        <td>200,000원</td>
+        <td>1205</td>
+      </tr>
+      <tr>
+        <td>01-245</td>
+        <td>겨울</td>
+        <td>200,000원</td>
+        <td>537</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th colspan="3">총합</th>
+        <td>800,000원</td>
+        <td>3786</td>
+      </tr>
+    </tfoot>
+
+
+  </table>
+
+
+  <hr>
+
+
+
+  <table class="tahead" border="1" >
+    <tr>
+      <td style="text-align: center; background-color: red;"  width="50rem" height ="70rem">1</td>
+      <td style="text-align: center; background-color: coral;" width="50rem">2</td>
+      <td style="text-align: center; background-color: yellow;" width="50rem" rowspan="2">3</td>
+      <td style="text-align: center; background-color: green;" width="50rem">4</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; background-color: blue;" width="50rem" height ="70rem" colspan="2">5</td>
+      <td style="text-align: center; background-color: darkslategray;" width="50rem" height ="70rem" rowspan="2">6</td>
+    </tr>
+    <tr>
+      <td style="text-align: center; background-color: darkorchid;" width="50rem" height ="70rem" >7</td>
+      <td style="text-align: center; background-color: aqua;" width="50rem" height ="70rem" colspan="2">8</td>
+    </tr>
+  </table>
+
+</body>
+</html>
