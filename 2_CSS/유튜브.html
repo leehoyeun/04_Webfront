@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube 클론</title>
+    <link rel="stylesheet" href="/2_CSS/css/유튜브.css">
+    <!-- 아이콘 폰트 (FontAwesome) 사용을 위한 스크립트 -->
+    <script src="https://kit.fontawesome.com/4592dbea9d.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ========== 상단 헤더 영역 ========== -->
+    <header class="header">
+        <!-- 왼쪽: 메뉴 아이콘 + 유튜브 로고 -->
+        <div class="left-section">
+            <i class="fa-solid fa-bars"></i>
+            <img src="/images/logo.jpg" alt="YouTube Logo" class="logo">
+        </div>
+
+        <!-- 가운데: 검색창 -->
+        <div class="center-section">
+            <form class="search-form">
+                <div>
+                    <input type="text" placeholder="검색">
+                    <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </form>
+        </div>
+
+        <!-- 오른쪽: 동영상 업로드 / 알림 / 사용자 아이콘 -->
+        <div class="right-section">
+            <i class="fa-solid fa-video"></i>
+            <i class="fa-regular fa-bell"></i>
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </header>
+
+    <!-- ========== 사이드바 (왼쪽 메뉴) 영역 ========== -->
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <!-- 각 메뉴는 아이콘 + 텍스트로 구성 -->
+                <li><i class="fa-solid fa-house"></i> 홈</li>
+                <li><i class="fa-solid fa-bolt"></i> Shorts</li>
+                <li><i class="fa-solid fa-tv"></i> 구독</li>
+                <li><i class="fa-solid fa-clock-rotate-left"></i> 시청 기록</li>
+                <li><i class="fa-solid fa-bars-progress"></i> 재생목록</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- ========== 메인 콘텐츠 영역 ========== -->
+    <main class="main-content">
+        <!-- 카테고리 버튼 영역 (가로 스크롤 메뉴) -->
+        <div class="category-bar">
+            <button>전체</button>
+            <button>음악</button>
+            <button>게임</button>
+            <button>뉴스</button>
+            <button>스케치 코미디</button>
+            <button>애니메이션</button>
+            <button>오리</button>
+        </div>
+
+        <!-- 영상 썸네일 + 제목 + 정보 카드 리스트 -->
+        <section class="video-grid">
+            <!-- 영상 카드 1 -->
+            <div class="video-card">
+                <img src="https://via.placeholder.com/300x180" alt="video thumbnail">
+                <h3>[속보] 나스닥 하락에 너무 연연하지 마세요</h3>
+                <p>슈카월드 • 조회수 89만회 • 8일 전</p>
+            </div>
+
+            <!-- 영상 카드 2 -->
+            <div class="video-card">
+                <img src="https://via.placeholder.com/300x180" alt="video thumbnail">
+                <h3>Jasper, Mike, Dr. H Play THE ANTE</h3>
+                <p>Hustler Casino Live • 6.6만회 • 5일 전</p>
+            </div>
+
+            <!-- 영상 카드 3 -->
+            <div class="video-card">
+                <img src="https://via.placeholder.com/300x180" alt="video thumbnail">
+                <h3>일본 랜덤 동화 나 이 웃음소리 너무 좋아</h3>
+                <p>의문의 드라이 Dorai • 35만회 • 5일 전</p>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
